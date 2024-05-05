@@ -28,8 +28,8 @@ const RootLayout = (props: RootLayoutProps) => {
           <main className="relative mx-auto mb-16 max-w-4xl px-8 py-24">
             {children}
           </main>
-          {/* <CustomToaster /> */}
-          <Toaster />4
+
+          <Toaster />
           <Footer />
         </body>
       </ThemeProvider>
