@@ -13,8 +13,8 @@ const Hero = () => {
       </h1>
       <p className="leading-6 text-muted-foreground">
         Here are some free online tools made by{" "}
-        <Link href="https://github.com/AkshayMoolya" className="text-white">
-          @AkshayMoolya
+        <Link href="https://github.com/AkshayMoolya" className="dark:text-white font-bold">
+          @akshaymoolya
         </Link>
         . I hope to train my skills. This may be my side project :)
       </p>

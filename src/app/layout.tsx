@@ -9,6 +9,46 @@ import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata: Metadata = {
+  title: "tools",
+  description:
+    "The best tools for developers and designers to convert, compress, and optimize images, colors, and more.",
+  openGraph: {
+    type: "website",
+    locale: "en_IE",
+    url: `https://tools.vercel.app`,
+    title: "Tools",
+    description:
+      " The best tools for developers and designers to convert, compress, and optimize images, colors, and more.",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 800,
+        height: 450,
+      },
+      {
+        url: "/logo.svg",
+        width: 800,
+        height: 450,
+      },
+    ],
+  },
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/logo.svg",
+        href: "/logo.svg",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/logo-dark.svg",
+        href: "/logo-dark.svg",
+      },
+    ],
+  },
+};
+
 type RootLayoutProps = {
   children: React.ReactNode;
 };

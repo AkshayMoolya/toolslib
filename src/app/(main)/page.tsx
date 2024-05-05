@@ -151,7 +151,7 @@ const Card = (props: CardProps) => {
   const { tools, title } = props;
 
   return (
-    <div className="w-full rounded-lg border p-4">
+    <div className="w-full rounded-lg border p-4 shadow-sm">
       <div>{title}</div>
       <div className="mt-4 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
         {tools.map((tool) => (
@@ -169,7 +169,7 @@ const Item = (props: Tool) => {
   return (
     <Link
       href={link}
-      className="flex flex-col items-center justify-center rounded-lg bg-accent p-4 text-center transition-colors duration-300 hover:bg-neutral-900"
+      className="flex flex-col items-center justify-center rounded-lg bg-accent p-4 text-center transition-colors duration-300 hover:bg-neutral-200 dark:hover:bg-neutral-900"
     >
       <Icon color={color} size={32} />
       <div className="mt-1.5">{label}</div>
