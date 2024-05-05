@@ -5,7 +5,8 @@ import { cn } from "@/lib/utils";
 import Header from "@/components/shared/Header";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import Footer from "@/components/shared/footer";
-import { Toaster } from "sonner";
+import { Toaster } from "@/components/ui/sonner";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,15 +20,15 @@ export const metadata: Metadata = {
     url: `https://toolslib101.vercel.appp`,
     title: "Tools",
     description:
-      " The best tools for developers and designers to convert, compress, and optimize images, colors, and more.",
+      "The best tools for developers and designers to convert, compress, and optimize images, colors, and more.",
     images: [
       {
-        url: "/logo.svg",
+        url: "/logo-dark.svg",
         width: 800,
         height: 450,
       },
       {
-        url: "/logo.svg",
+        url: "/logo-dark.svg",
         width: 800,
         height: 450,
       },
@@ -37,8 +38,8 @@ export const metadata: Metadata = {
     icon: [
       {
         media: "(prefers-color-scheme: light)",
-        url: "/logo.svg",
-        href: "/logo.svg",
+        url: "/logo-dark.svg",
+        href: "/logo-dark.svg",
       },
       {
         media: "(prefers-color-scheme: dark)",
