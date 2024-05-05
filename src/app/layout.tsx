@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IE",
-    url: `https://tools.vercel.app`,
+    url: `https://toolslib101.vercel.appp`,
     title: "Tools",
     description:
       " The best tools for developers and designers to convert, compress, and optimize images, colors, and more.",
