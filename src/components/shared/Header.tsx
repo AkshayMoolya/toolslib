@@ -3,6 +3,7 @@ import { Github, LogOut } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { ModeToggle } from "./modetoggle";
 
 const Header = () => {
   return (
@@ -14,15 +15,18 @@ const Header = () => {
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </Link>
-        <div className="flex items-center justify-center gap-6">
-          <a
-            href="https://github.com/AkshayMoolya"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="GitHub"
-          >
-            <Github />
-          </a>
+        <div className="flex gap-2">
+          <ModeToggle />
+          <div className="flex items-center justify-center gap-6">
+            <a
+              href="https://github.com/AkshayMoolya"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub"
+            >
+              <Github />
+            </a>
+          </div>
         </div>
       </div>
     </header>
